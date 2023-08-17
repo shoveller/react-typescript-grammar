@@ -70,7 +70,10 @@ let 생성자함수문자열: unknown = new String('생성자함수').valueOf()
  * 4. boolean
  * 참(true) 과 거짓(false)을 표현합니다.
  * 자바스크립트에서 사용했던 Falsy 와 Trusy를 대체합니다.
- * 문제) unknown 대신에 적절한 타입 어노테이션을 붙여서 컴파일러에게 힌트를 줘 보세요.
+ */ 
+ 
+/** 문제) 
+ * unknown 대신에 적절한 타입 어노테이션을 붙여서 컴파일러에게 힌트를 줘 보세요.
  * IDE의 지원을 받으면 더 쉽게 입력할 수 있습니다.
 */
 let 참: unknown = true
