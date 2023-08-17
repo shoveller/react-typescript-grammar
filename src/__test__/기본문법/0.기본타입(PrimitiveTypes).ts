@@ -36,6 +36,7 @@ let 등호를_기준으로_왼쪽을_추론하는_예 = 0
  * 3. number
  * 자바스크립트에서 사용하는 모든 부동소숫점 값을 표현합니다.
  * unknown 대신에 적절한 타입 어노테이션을 입력해 보세요.
+ * IDE의 지원을 받으면 더 쉽게 입력할 수 있습니다.
 */  
 let 정수: unknown = 6
 let 부동소숫점: unknown = 3.14
@@ -47,6 +48,7 @@ let 생성자함수숫자: unknown = new Number(0).valueOf()
  * 4. string
  * 자바스크립트에서 사용하는 모든 문자열 값을 표현합니다.
  * unknown 대신에 적절한 타입 어노테이션을 입력해 보세요.
+ * IDE의 지원을 받으면 더 쉽게 입력할 수 있습니다.
 */  
 let 작은따옴표문자열: unknown = '작은거'
 let 큰따옴표문자열: unknown = "큰거"
@@ -58,6 +60,7 @@ let 생성자함수문자열: unknown = new String('생성자함수').valueOf()
  * 참(true) 과 거짓(false)을 표현합니다.
  * 자바스크립트에서 사용했던 Falsy 와 Trusy를 대체합니다.
  * unknown 대신에 적절한 타입 어노테이션을 입력해 보세요.
+ * IDE의 지원을 받으면 더 쉽게 입력할 수 있습니다.
 */
 let 참: unknown = true
 let 거짓: unknown = false
