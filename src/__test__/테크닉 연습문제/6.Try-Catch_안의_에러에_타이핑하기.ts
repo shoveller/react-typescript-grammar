@@ -12,38 +12,3 @@ try {
 } catch(e) {
   console.log(e.message)
 }
-
-/**
- * 1. any 로 타이핑하기
- * 실무에서 가장 많이 등장하는 패턴입니다.
- * 하지만 any로 타이핑을 한 이상, 실행해 봐야만 발생하는 에러를 만들기 쉽습니다.
- */
-try {
-  // 중요한 일  
-} catch(e: any)  {
-  console.log(e.message)
-}
-
-/**
- * 2. as 로 단정하기
- * 이것 또한 실무에서 가장 많이 등장하는 패턴입니다.
- * 하지만 함부로 타입을 단정하면, 실행해 봐야만 발생하는 에러를 만들기 쉽습니다.
- */
-try {
-  // 중요한 일  
-} catch(e)  {
-  console.log((e as Error).message)
-}
-
-/**
- * 2. instanceof 로 범위 좁히기
- * 요즘 유행하는 패턴입니다.
- * 실행할 때도 안전하고 타입 안정성도 보장합니다.
- */
-try {
-    // 중요한 일  
-  } catch(e)  {
-    if (e instanceof Error) {
-      console.log(e.message);
-    }
-  }

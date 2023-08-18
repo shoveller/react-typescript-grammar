@@ -26,14 +26,3 @@ const 비동기작업 = async (콜백함수: (값: number) => Promise<boolean>) 
 비동기작업(async (값: number) => {
   return 값 === 1;
 });
-
-/**
- * 콜백함수인터페이스는 vscode의 자동완성 기능에서 힌트를 찾을 수 있습니다.
- * 자동완성이 만든 타입을 그대로 사용해도 되지만, 불필요한 오버로딩은 최대한 덜어내는 것이 좋습니다.
- * 단일함수를 선언한다면 함수 표현식과 비슷한 모양으로 선언할 수도 있습니다.
- */
-// interface 콜백함수인터페이스 { 
-//   (값: number): Promise<boolean>
-// }
-
-// type 콜백함수타입 = (값: number) => Promise<boolean> 

@@ -11,13 +11,6 @@ interface User {
     comment: string;
 }
 
+type Human = unknown
 
-/**
- * Omit 은 어떤 타입에서 특정 필드만 제거한 새로운 타입을 만듭니다.
- */
-type Human = Omit<User , 'comment'>
-
-/**
- * Pick 은 어떤 타입에서 특정 필드만 가져와 새로운 타입을 만듭니다.
- */
-type Human = Pick<User, 'id' | 'name'>
+type Human1 = unknown
