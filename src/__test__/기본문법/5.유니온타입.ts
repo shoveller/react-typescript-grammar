@@ -1,4 +1,4 @@
-export {}
+export {};
 /**
  * 유니온 타입(union type)은 한번에 2개 이상의 타입을 허용하는 타입입니다.
  * 타입과 타입은 버티컬 바 | 로 구분합니다.
@@ -7,9 +7,10 @@ export {}
 /**
  * 아래의 변수에 적절한 값을 대입해 보세요.
  */
-const a: number | string = []
-const b: { a: number } | { b: string } = {}
-
+const a: number | string = "1";
+const b: { a: number } | { b: string } = {
+  b: "0",
+};
 
 /**
  * 문제)
@@ -18,11 +19,11 @@ const b: { a: number } | { b: string } = {}
  */
 
 type 사용자 = {
-    id: string
-    역활: '슈퍼' | '어드민'
-}
+  id: string;
+  역활: "슈퍼" | "어드민" | "게스트";
+};
 
 const 나: 사용자 = {
-    id: '유니크',
-    역활: '게스트'
-}
+  id: "유니크",
+  역활: "게스트",
+};
