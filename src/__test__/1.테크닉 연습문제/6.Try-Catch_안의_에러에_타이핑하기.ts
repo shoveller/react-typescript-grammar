@@ -5,10 +5,10 @@
  * 1. any
  * 2. as
  * 3. instanceof
-*/
+ */
 
 try {
-  // 중요한 일  
-} catch(e) {
-  console.log(e.message)
+  // 중요한 일
+} catch (e) {
+  console.log(e.message);
 }
