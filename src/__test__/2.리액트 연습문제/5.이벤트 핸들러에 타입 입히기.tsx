@@ -8,7 +8,7 @@ interface 버튼Props {
   children: React.ReactNode;
 }
 
-export const Button = ({ children, className, onClick }: 버튼Props) => {
+export const 버튼 = ({ children, className, onClick }: 버튼Props) => {
   return (
     <button onClick={onClick} className={className}>
       {children}
