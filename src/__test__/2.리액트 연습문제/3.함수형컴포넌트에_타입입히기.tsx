@@ -8,7 +8,6 @@ type 버튼타입 = {
  * unknown 을 적절한 타입으로 바꾸어 보세요.
  */
 export const 버튼: React.FC<unknown> = (props) => {
-  // 아래의 json을 적절한 jsx 로 바꾸어 주세요.
   return <button className={props.className}>전송!</button>;
 };
 

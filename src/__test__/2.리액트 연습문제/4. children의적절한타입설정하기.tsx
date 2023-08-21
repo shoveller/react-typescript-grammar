@@ -9,7 +9,7 @@ export const 버튼: React.FC<버튼타입> = (props) => {
 };
 
 /**
- * 힌트는 props.children 위에 마우스를 올려보는 것입니다.
- * children 의 올바른 타입은 React.ReactNode 입니다.
- * ReactNode 는 null 과 string, number, ReactElement를 모두 포괄하는 타입입니다.
+ * 1. props.children 위에 마우스를 올려보세요
+ * 2. children 의 올바른 타입은 React.ReactNode 입니다.
+ * 3. ReactNode 는 null 과 string, number, ReactElement를 모두 포괄하는 타입입니다.
  */
