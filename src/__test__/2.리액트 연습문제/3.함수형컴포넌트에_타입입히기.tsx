@@ -1,27 +1,22 @@
-/**
- * 아래의 <버튼 /> 은 잘못된 컴포넌트입니다
- * 버튼에 함수형 컴포넌트 전용 타입을 입히면 사용하기 전에 에러를 막을 수 있습니다.
- * unknown 을 적절한 타입으로 바꾸어 보세요.
- */
-
 type 버튼타입 = {
   className: string;
-}
-  
+};
+
+/**
+ * React.FC 는 함수형 컴포넌트를 표현하는 유틸리티 타입입니다.
+ * React.FC 는 Prop 타입을 매개변수로 받습니다.
+ * unknown 을 적절한 타입으로 바꾸어 보세요.
+ */
 export const 버튼: React.FC<unknown> = (props) => {
   // 아래의 json을 적절한 jsx 로 바꾸어 주세요.
-  return {
-    이름: "abc",
-  };
+  return <button className={props.className}>전송!</button>;
 };
 
 const 부모 = () => {
   return <버튼 className="my-class" />;
 };
 
-
 /**
- * 이 문제를 해결하는 방법은 React.FC 를 사용하는 것입니다.
  * React.FC 는 리액트에서 함수형 컴포넌트를 나타내기 위해 제공하는 유틸리티 타입입니다.
  * React.FC 위로 마우스를 가져가 타입 정의로 이동하면, 일부 프로퍼티를 취하고 기본값은 빈 객체임을 나타내는 단일 문자 P가 있는 것을 볼 수 있습니다:
  * 더 파고들어가 FunctionComponent를 확인해보면 더 정확한 정의를 알아낼 수 있습니다.

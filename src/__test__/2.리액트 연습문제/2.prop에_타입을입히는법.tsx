@@ -1,25 +1,27 @@
 /**
  * 버튼 컴포넌트에 className 이라는 값을 넘기고 싶습니다.
  * 올바른 타입을 대입해서 타입스크립트 에러를 지워 보세요.
+ * button 의 prop인 className의 타입을 찾을 수 있나요?
+ * props 는 className 을 가지는 객체입니다.
+ * props 는 어떤 타입이 되어야 할까요?
  */
-// unknown 
 export const 버튼 = (props: unknown) => {
-    return <button className={props.className}></button>;
+  return <button className={props.className}></button>;
 };
 
 /**
  * 우선 적절한 타입을 찾는 것부터 시작하면 좋습니다.
  * className 위에 마우스를 올려서 적절한 타입을 찾습니다.
  * 그 다음에는 세 가지 선택지가 있습니다.
- * 
+ *
  * 1. 인라인 타이핑
  * props 뒤에 타입 어노테이션을 바로 붙일수도 있습니다.
  * 사실 이 방법은 vscode가 가장 잘 하는 일입니다.
  * vscode 의 자동완성 기능으로 구현할 수 있습니다.
- * 
+ *
  * 2. 인터페이스로 옮기기
  * vscode가 인라인으로 타이핑한 타입을 인터페이스로 옮기면 됩니다.
- * 
+ *
  * 3. 타입으로 옮기기
  * vscode가 인라인으로 타이핑한 타입을 타입으로 옮기면 됩니다.
  * 중복 선언이 불가능하기 때문에 개인적으로 선호합니다.
