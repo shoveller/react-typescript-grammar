@@ -1,7 +1,7 @@
 import { ComponentProps, ComponentType, FC } from "react";
 
 // 아래의 체크박스는 Props 타입을 인라인으로 선언했습니다.
-const 체크박스: FC<{ id: string; name: string }> = ({ id, name }) => {
+export const 체크박스: FC<{ id: string; name: string }> = ({ id, name }) => {
   return <input id={id} name={name} />;
 };
 
