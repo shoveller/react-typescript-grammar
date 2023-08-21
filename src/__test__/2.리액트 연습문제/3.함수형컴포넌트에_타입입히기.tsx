@@ -8,7 +8,8 @@ type 버튼타입 = {
   className: string;
 }
   
-export const 버튼: React.FC<버튼타입> = (props) => {
+export const 버튼: React.FC<unknown> = (props) => {
+  // 아래의 json을 적절한 jsx 로 바꾸어 주세요.
   return {
     이름: "abc",
   };
@@ -22,6 +23,9 @@ const 부모 = () => {
 /**
  * 이 문제를 해결하는 방법은 React.FC 를 사용하는 것입니다.
  * React.FC 는 리액트에서 함수형 컴포넌트를 나타내기 위해 제공하는 유틸리티 타입입니다.
+ * React.FC 위로 마우스를 가져가 타입 정의로 이동하면, 일부 프로퍼티를 취하고 기본값은 빈 객체임을 나타내는 단일 문자 P가 있는 것을 볼 수 있습니다:
+ * 더 파고들어가 FunctionComponent를 확인해보면 더 정확한 정의를 알아낼 수 있습니다.
+ * defaultProps 처럼 더 이상 사용하지 않지만 흔적으로만 남은 프로퍼티도 확인할 수 있습니다.
  * React.FC 를 설정하면 이제 className 에서 에러가 발생합니다.
  * React.FC 는 제네릭 타입이고, 컴포넌트의 Props를 인자로 받습니다.
  * 그것은 React.FC 의 타입 정의를 파고 들어가보면 알 수 있습니다.
