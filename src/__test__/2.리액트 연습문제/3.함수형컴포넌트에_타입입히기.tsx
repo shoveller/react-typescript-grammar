@@ -7,7 +7,7 @@ type 버튼타입 = {
  * React.FC 는 Prop 타입을 매개변수로 받습니다.
  * unknown 을 적절한 타입으로 바꾸어 보세요.
  */
-export const 버튼: React.FC<unknown> = (props) => {
+export const 버튼: React.FC<버튼타입> = (props) => {
   return <button className={props.className}>전송!</button>;
 };
 
