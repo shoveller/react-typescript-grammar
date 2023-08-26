@@ -5,11 +5,9 @@ import { useEffect } from "react";
  * 타입 에러를 수정하세요.
  */
 export const use타이머 = (타임아웃: number) => {
-  useEffect(
-    () =>
-      setTimeout(() => {
-        console.log("완료!");
-      }, 타임아웃),
-    [타임아웃]
-  );
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("완료!");
+    }, 타임아웃);
+  }, [타임아웃]);
 };
