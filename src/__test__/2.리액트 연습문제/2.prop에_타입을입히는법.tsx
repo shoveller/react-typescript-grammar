@@ -5,6 +5,14 @@
  * props 는 className 을 가지는 객체입니다.
  * props 는 어떤 타입이 되어야 할까요?
  */
-export const 버튼 = (props: unknown) => {
+// 답 1
+type 버튼타입 = { className?: string };
+
+// 답 2
+interface 버튼타입2 {
+  className?: string;
+}
+
+export const 버튼 = (props: 버튼타입2) => {
   return <button className={props.className}></button>;
 };
