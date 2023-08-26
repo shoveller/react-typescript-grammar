@@ -35,10 +35,3 @@ export const 버튼2 = ({
     </button>
   );
 };
-
-// ComponentProps 를 이용하면 컴포넌트에서 prop type을 추출할 수 있습니다.
-type 내가만든쿠키타입 = ComponentProps<typeof 내가만든쿠키>;
-
-const 내가만든쿠키 = ({}: { a: string }) => {
-  return <></>;
-};
