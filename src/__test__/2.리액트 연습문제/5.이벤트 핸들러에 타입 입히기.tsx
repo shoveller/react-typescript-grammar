@@ -3,9 +3,12 @@
  * 버튼Props 에 빠진 프로퍼티를 적어 주세요.
  */
 
+import { MouseEventHandler } from "react";
+
 interface 버튼Props {
   className: string;
   children: React.ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export const 버튼 = ({ children, className, onClick }: 버튼Props) => {
