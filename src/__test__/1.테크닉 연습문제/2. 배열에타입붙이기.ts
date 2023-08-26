@@ -14,7 +14,8 @@ type Comment = {
 interface User {
   id: string;
   name: string;
-  comment: Comment;
+  comment: Comment[];
+  // comment: Array<Comment>;
 }
 
 const 사용자: User = {
